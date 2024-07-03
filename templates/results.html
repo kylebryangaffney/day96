@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block title %}Results - Mars Rover Pictures{%
+endblock %} {% block content %}
+<h1 class="mt-5">Mars Rover Photos - Results</h1>
+<h2>Panoramic Camera</h2>
+<div class="row">
+  {% for img in panoramic_camera %}
+  <div class="col-md-4">
+    <img src="{{ img }}" class="img-fluid" alt="Panoramic Camera" />
+  </div>
+  {% endfor %}
+</div>
+<h2>Front Hazard Camera</h2>
+<div class="row">
+  {% for img in front_hazard_camera %}
+  <div class="col-md-4">
+    <img src="{{ img }}" class="img-fluid" alt="Front Hazard Camera" />
+  </div>
+  {% endfor %}
+</div>
+<h2>Rear Hazard Camera</h2>
+<div class="row">
+  {% for img in rear_hazard_camera %}
+  <div class="col-md-4">
+    <img src="{{ img }}" class="img-fluid" alt="Rear Hazard Camera" />
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

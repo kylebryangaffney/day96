@@ -1,0 +1,21 @@
+  
+  /* Container styles */
+  .container {
+    flex: 1;
+    margin-top: 20px;
+  }
+  
+  footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  /* Smaller select input */
+  .smaller-select {
+    width: auto; /* Adjust this value to your preferred width */
+    max-width: 200px; /* Example width, you can change it as needed */
+  }
+  
+  
