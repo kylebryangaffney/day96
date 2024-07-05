@@ -5,6 +5,7 @@ from wtforms import SubmitField, SelectField, DateField
 from wtforms.validators import DataRequired
 import requests
 from datetime import datetime
+import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv("SECRET_KEY")
